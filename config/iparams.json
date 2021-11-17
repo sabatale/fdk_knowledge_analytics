@@ -1,0 +1,21 @@
+{
+  "domainName": {
+    "display_name": "Domain Name",
+    "description": "Please enter your Freshdesk sub-domain.",
+    "type": "domain",
+    "type_attributes": {
+      "product": "freshdesk"
+    },
+    "required": true
+  },
+  "apiKey": {
+    "display_name": "API Key",
+    "description": "Please enter your Freshdesk API key. You can find it in the profile settings page.",
+    "type": "api_key",
+    "secure": true,
+    "required": true,
+    "type_attributes": {
+      "product": "freshdesk"
+    }
+  }
+}

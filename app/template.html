@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://static.freshdev.io/fdk/2.0/assets/fresh_client.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="https://unpkg.com/gridjs/dist/gridjs.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment-with-locales.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://static.freshdev.io/fdk/2.0/assets/freshdesk.css">
+    <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <h1 id="titlestats">
+      Knowledge Base Review
+    </h1>
+
+    <div id="wrapper" class="wrapper"></div>
+      <!--<button id="fs-button" class="fs-button-x margin-report" onclick="">Full Screen Mode</button>-->
+    <div id="row" class="row">
+      <div id="report_countartperfolder" class="column-top">
+      <h3 style="text-align:center">Total number of Articles per Folder</h3>
+        <canvas id="ch_art_fol"></canvas>
+      </div>
+      <div id="report_counthitsperfolder" class="column-top">
+      <h3 style="text-align:center">Total number of Views per Folder</h3>
+        <canvas id="ch_hits_fol"></canvas>
+      </div>
+      <div id="report_mostsuggested" class="column">
+        <h3 style="text-align:center">Solutions in Draft status</h3>
+        <div id="report_mostsuggested_table" class="wrapper"></div>
+      </div>
+      <div id="report_artuserfeedback" class="column">
+        <h3 style="text-align:center">Solutions with User Feedback</h3>
+        <div id="report_artuserfeedback_table" class="wrapper"></div>
+      </div>
+    </div>
+  </body>
+
+
+</html>
